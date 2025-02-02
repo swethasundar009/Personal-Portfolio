@@ -1,0 +1,614 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8ff; /* Light lavender base */
+  color: #333;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #6a5acd; /* Lavender shade */
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-brand .title {
+  display: block;
+  font-size: 1rem;
+  color:darkgray; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  color:blanchedalmond;
+}
+
+.social-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header {
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.animated-logo .logo-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #6a5acd;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Profile Info Styling */
+.profile-info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.name-title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+  color:#6a5acd;
+}
+
+.pronouns {
+  font-size: 1rem;
+  color: #777;
+}
+
+.role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6a5acd;
+}
+
+.tagline {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* Grid Layout for About Section */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.about-item {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-item:hover {
+  transform: translateY(-5px);
+}
+
+.social-link {
+  color: white;
+  font-size: 1.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+  color:orchid;
+}
+
+/* Icon Styling */
+.fas, .fab {
+  color: #2c3e50;
+}
+
+.fas, .fab:hover {
+  color: cornflowerblue;
+  transform: scale(1.2);
+}
+
+.icons-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #6a5acd; /* Lavender shade */
+  background-color: #e6e6fa;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  background-color: #ffd700; /* Golden pop on hover */
+}
+
+/* Shapes (Decorative) */
+.header-shapes .shape {
+  position: absolute;
+  background-color: #e6e6fa;
+  opacity: 0.3;
+  border-radius: 15%;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Section Styling */
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+/* Unique Section Backgrounds */
+#about {
+  background-color: #e6e6fa; /* Lavender */
+}
+
+
+
+#education {
+  background-color: #e6e6fa; /* Lavender */
+}
+
+#experience {
+  background-color: #e6e6fa; /* Lavender */
+}
+
+#activity {
+  background-color: #e6e6fa; /* Lavender */
+}
+
+#certificates {
+  background-color: #e6e6fa; /* Lavender */
+}
+
+#interests {
+  background-color: #e6e6fa; /* Lavender */
+}
+
+#contact {
+  background-color: #e6e6fa; /* Lavender */
+}
+
+/* Section Headings */
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4b0082; /* Indigo */
+}
+
+/* Content Alignment */
+section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Interests Grid */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 boxes in a row */
+  gap: 20px; /* Space between boxes */
+  margin-top: 20px;
+}
+
+/* Individual Interest Item */
+.interest-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Interest Icon */
+.interest-icon {
+  font-size: 2rem;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+/* Interest Title */
+.interest-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Interest Description */
+.interest-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .interests-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 boxes per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .interests-grid {
+      grid-template-columns: 1fr; /* 1 box per row on smaller devices */
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#education {
+  padding: 50px 0;
+}
+
+#education h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#education h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #3498db;
+  display: block;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+.education-timeline {
+  position: relative;
+  padding-left: 10%;
+  margin-top: 20px;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 5%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #74b1da;
+  border-radius: 10px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-badge {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #9bd2e1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content {
+  padding: 15px 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 70px;
+  text-align: left;
+}
+
+.timeline-content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  margin: 5px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.timeline-content .tags {
+  margin-top: 10px;
+}
+
+.timeline-content .tag {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-timeline {
+      padding-left: 0;
+  }
+
+  .education-timeline::before {
+      left: 20px;
+  }
+
+  .timeline-content {
+      margin-left: 80px;
+  }
+
+  .timeline-badge {
+      left: -10px;
+  }
+}
+
+#certificates h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.certificate-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.certificate-item:last-child {
+  border-bottom: none;
+}
+
+.certificate-item:hover {
+  background-color: #f9fbfd;
+}
+
+.certificate-icon {
+  font-size: 2rem;
+  color: #3498db;
+  margin-right: 15px;
+}
+
+.certificate-content h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.certificate-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.cert-tag {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin: 5px 5px 0 0;
+}
+
+/* Remove Bullet Points */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Adjust Alignment for Certain Sections */
+#experience {
+  text-align: left;
+}
+
+#skills {
+  text-align: left; 
+}
+
+#certificates {
+  text-align: center;
+}
+
+.skill-item {
+  margin: 1%;
+  font-weight: 500;
+}
+
+
+/* Professional Fonts */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+.resume-section {
+  padding: 20px;
+  background-color: #f9fbfd;
+  margin: 20px auto; 
+  max-width: 800px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+.resume-section:hover {
+  background-color: #e6e6fa;
+}
+
+.resume-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.resume-section p {
+  font-size: 16px;
+  color: #1d1b1b;
+}
+
+.resume-section .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.resume-section .btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Footer Styling */
+footer {
+  background-color: #6a5acd;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: cornflowerblue ;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h4 {
+  color: #4b0082;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
