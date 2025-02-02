@@ -21,17 +21,6 @@ A responsive personal portfolio website showcasing my skills, experience, and pr
 - Bootstrap
 - Font Awesome Icons
 
-## 📂 Project Structure
-Personal-Portfolio/
-├── Personalportfolio.html
-├── assets/
-│ ├── css/
-│ │ └── styles.css
-│ ├── js/
-│ │ └── script.js
-│ └── images/
-└── README.md
-
 ## 🎯 Sections
 
 - **Hero Section**: Personal introduction and role
@@ -49,7 +38,7 @@ Personal-Portfolio/
 
 1. Clone the repository:
 
-bash
+
 git clone https://github.com/swethasundar009/Personal-Portfolio.git
 
 
@@ -80,7 +69,7 @@ This project is open source and available under the [MIT License](LICENSE)
 
 ## 📞 Contact
 
-- Email: [Contact through portfolio]
+- Email: [swethasundar009@gmail.com]
 - GitHub: [@swethasundar009](https://github.com/swethasundar009)
 
 ---
