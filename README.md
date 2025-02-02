@@ -69,7 +69,7 @@ This project is open source and available under the [MIT License](LICENSE)
 
 ## 📞 Contact
 
-- Email: [swethasundar009@gmail.com]
+- Email: swethasundar009@gmail.com
 - GitHub: [@swethasundar009](https://github.com/swethasundar009)
 
 ---
